@@ -1,0 +1,59 @@
+/* ============================================
+   estilo.css - visual da página de teste
+   ============================================ */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 20px;
+  color: #222;
+}
+
+h1 {
+  border-bottom: 2px solid #444;
+  padding-bottom: 8px;
+}
+
+/* Card de produto */
+.produto {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.preco {
+  font-weight: bold;
+  color: #0a7a28;
+}
+
+.estoque-esgotado {
+  color: #b00;
+  font-weight: bold;
+}
+
+/* Tabela */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 24px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+footer {
+  margin-top: 32px;
+  font-size: 13px;
+  color: #666;
+}
+
+/* Card que o JavaScript cria (aparece depois de 1 segundo) */
+.produto-js {
+  border: 2px dashed #888;
+  background: #fafafa;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--
+  Página de teste para scrapers (Apify e outros).
+  HTML + CSS + JS separados de propósito, para testar:
+  - requisição de arquivos externos (css e js)
+  - conteúdo que só aparece depois que o JavaScript roda
+  - erros no console
+-->
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Teste - Loja Exemplo</title>
+  <meta name="description" content="Página de teste com produtos, preços e estoque para testar scrapers.">
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <h1>Catálogo de Teste — Loja Exemplo</h1>
+  <p>Página fictícia criada para testar ferramentas de scraping. Nenhum produto é real.</p>
+
+  <!-- Bloco 1: cards com produto -->
+  <section id="produtos">
+    <h2>Produtos em destaque</h2>
+
+    <article class="produto">
+      <h3>Teclado Mecânico Gamer</h3>
+      <p class="preco">R$ 349,90</p>
+      <p>Switches táteis, ABNT2, iluminação RGB.</p>
+      <p class="estoque">Em estoque: 42 unidades</p>
+      <p>SKU: TEC-001 · Categoria: Periféricos</p>
+    </article>
+
+    <article class="produto">
+      <h3>Mouse Sem Fio Ergonômico</h3>
+      <p class="preco">R$ 129,50</p>
+      <p>2400 DPI, bateria recarregável, 6 botões.</p>
+      <p class="estoque">Em estoque: 8 unidades</p>
+      <p>SKU: MOU-002 · Categoria: Periféricos</p>
+    </article>
+
+    <article class="produto">
+      <h3>Monitor 24" IPS Full HD</h3>
+      <p class="preco">R$ 899,00</p>
+      <p>75 Hz, HDMI e DisplayPort, ajuste de altura.</p>
+      <p class="estoque-esgotado">ESGOTADO</p>
+      <p>SKU: MON-003 · Categoria: Monitores</p>
+    </article>
+
+    <article class="produto">
+      <h3>Cadeira Gamer Reclinável</h3>
+      <p class="preco">R$ 1.199,00</p>
+      <p>Couro sintético, apoio lombar, altura regulável.</p>
+      <p class="estoque">Em estoque: 15 unidades</p>
+      <p>SKU: CAD-004 · Categoria: Móveis</p>
+    </article>
+  </section>
+
+  <!-- Bloco 2: tabela, outro formato de extrair -->
+  <section id="tabela-precios">
+    <h2>Tabela de preços</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Código</th>
+          <th>Produto</th>
+          <th>Preço</th>
+          <th>Disponibilidade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>CAB-101</td>
+          <td>Cabo HDMI 2.1 - 2 metros</td>
+          <td>R$ 45,00</td>
+          <td>Disponível</td>
+        </tr>
+        <tr>
+          <td>CAB-102</td>
+          <td>Cabo USB-C Thunderbolt</td>
+          <td>R$ 89,90</td>
+          <td>Disponível</td>
+        </tr>
+        <tr>
+          <td>HUB-201</td>
+          <td>Hub USB-C 7 portas</td>
+          <td>R$ 159,00</td>
+          <td>Últimas unidades</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Bloco 3: lista simples -->
+  <section id="categorias">
+    <h2>Categorias</h2>
+    <ul>
+      <li>Periféricos</li>
+      <li>Monitores</li>
+      <li>Móveis</li>
+      <li>Cabos e Adaptadores</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Loja Exemplo — CNPJ 00.000.000/0001-00 · contato@lojaexemplo.com.br</p>
+    <p>Página de teste. Atualizada em 15/10/2026.</p>
+  </footer>
+
+  <!-- JS externo, carregado no fim para não travar a leitura do HTML -->
+  <script src="script.js"></script>
+</body>
+</html>
